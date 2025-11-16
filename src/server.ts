@@ -13,6 +13,7 @@ const inputPort = process.env.PORT || 4001;
 // initializes the server
 function initializeServer() {
   db.initialize(); // initialize the database
+  console.log("test");
   console.log('Initial list of transcripts:');
   console.log(db.getAll());
   console.log(`Express server now listening on localhost:${inputPort}`);
